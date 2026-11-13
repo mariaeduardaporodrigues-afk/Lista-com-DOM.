@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista com DOM | Cursos</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero"><span class="tag">INTERFACES WEB II</span><h1>Lista <span>com DOM</span></h1><p>Organize cursos, explore informações e descubra novas possibilidades ✦</p></header>
+<main>
+<section class="form-card">
+<div class="section-title"><div><span class="eyebrow">CRIE SUA LISTA</span><h2>Adicionar um curso</h2></div><span class="sparkle">✦</span></div>
+<form id="courseForm">
+<label for="title">Título do curso</label><input id="title" type="text" placeholder="Ex.: Desenvolvimento Web" required maxlength="70">
+<label for="description">Descrição</label><textarea id="description" placeholder="Conte um pouco sobre o curso..." required maxlength="240"></textarea>
+<label for="image">Imagem (URL)</label><input id="image" type="url" placeholder="https://... (opcional)">
+<button class="add-btn" type="submit">＋ Adicionar à lista</button>
+</form><p class="hint">Dica: você pode adicionar seus próprios cursos!</p>
+</section>
+<section class="list-section"><div class="list-heading"><div><span class="eyebrow">SEUS CONTEÚDOS</span><h2>Cursos cadastrados <span id="count" class="count">0</span></h2></div><button id="clearBtn" class="clear-btn" type="button">Limpar lista</button></div>
+<div id="courseList" class="course-list"><div class="empty"><span>♡</span><h3>Sua lista está esperando!</h3><p>Adicione o primeiro curso usando o formulário acima.</p></div></div>
+</section>
+</main><footer>Feito com <span>♥</span> e JavaScript • Projeto acadêmico</footer><script src="script.js"></script></body></html>
